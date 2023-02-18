@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'g++ PES2UG20CS494.cpp -o PES2UG20CS49
+        sh 'g++ PES2UG20CS494.cpp -o PES2UG20CS494'
       }
     }
    
@@ -16,8 +16,8 @@ pipeline {
    
     stage('Deploy') {
       steps {
-        echo 'Pipeline deployed'
-      }
+       sh '/departent/services'
+
     }
   }
  
